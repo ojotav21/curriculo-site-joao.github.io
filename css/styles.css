@@ -1,0 +1,95 @@
+/* Formatação Geral */
+body {
+    font-family: Trocchi, Montserrat, 'Permanent Marker', sans-serif;
+    /* background-color:cornflowerblue;  */
+}
+
+h1,h2,h3 {
+    margin: 0;
+    font-family: 'Roboto';
+    font-weight: 700;
+}
+
+p{
+    font-family: 'Trocchi', Roboto, 'Times New Roman', Times, serif;
+}
+
+
+
+/* Cabeçalho Barra de Navegação */
+.logo img{
+    width: 7cm;
+    height: 7cm;
+    border-radius: 100%;
+}
+
+/* nav > a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-size: 35px;
+    font-family: Pacifico;
+} */
+
+nav{
+    display: flex;  /*flexivel */
+    flex-direction: column;  /*um em baixo do outro */ 
+    align-items: center;
+    background-color: #B0C4DE ;
+    padding: 35px;
+
+}
+
+nav ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+nav ul li {
+    text-align: center;
+    width: 100%;
+    font-size: 1.5em;  /*EM = pega a fonte padrão do site, e poe 1.5(nesse caso) cm a mais. */
+    padding: 2%; 
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 0;
+    width: 100%;
+    text-decoration: none;
+    color: #161616 ;
+    /* text-shadow: black 1cm; */
+}
+
+
+@media screen and (min-width: 768px){
+    /* Cabeçalho Barra de Navegação */
+    nav{
+        flex-direction: row;
+        justify-content: space-around;
+    }  
+
+    nav ul {
+        flex-direction: row;
+        width: 70%;
+    }
+}
+
+
+/* .sobre img {
+    width: 7cm;
+    height: 7cm;
+    border-radius: 100%;
+    align-self: baseline;
+}
+
+.sobre h1, p {
+    text-align: center;
+    flex-direction: column;
+} */
+
+
