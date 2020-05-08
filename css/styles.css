@@ -1,3 +1,6 @@
+
+/* Para Mobile */
+
 /* Formatação Geral */
 body {
     font-family: Trocchi, Montserrat, 'Permanent Marker', sans-serif;
@@ -6,12 +9,16 @@ body {
 
 h1,h2,h3 {
     margin: 0;
-    font-family: 'Roboto';
+    font-family: 'Trocchi';
     font-weight: 700;
 }
 
 p{
     font-family: 'Trocchi', Roboto, 'Times New Roman', Times, serif;
+}
+
+.container{
+    width: 100%;
 }
 
 
@@ -35,7 +42,7 @@ nav{
     display: flex;  /*flexivel */
     flex-direction: column;  /*um em baixo do outro */ 
     align-items: center;
-    background-color: #B0C4DE ;
+    background-color: rgb(190, 209, 233) ;
     padding: 35px;
 
 }
@@ -66,7 +73,72 @@ nav ul li a {
 }
 
 
+/* Header */
+
+header{
+
+    background-image: url("../img/fundo.png");
+    background-size: cover; /* Pegar a tela inteira */
+    background-position: center;
+    background-repeat: no-repeat;
+    color:#161616;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 35px;
+
+}
+
+header p{
+   margin-bottom: 2em;
+   font-size: 1.7em ;
+
+}
+
+.botao{
+    color: #202020 ;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color:rgb(190, 209, 233)  ;
+    border-radius: 10px;
+    font-size: 0.9em;
+}
+
+#sobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center ;
+    background-color:rgb(190, 209, 233);
+    color: #161616;
+    
+}
+
+#sobre h2 {
+    margin-top: 20px;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+ 
+.foto img{
+    width: 67%;
+    border-radius: 100%;
+}
+
+.foto{
+    float: left;
+    width: 50%;
+}
+
+.texto {
+    float: right;
+    width: 50%;
+}
+
+/* Para Desktop */
 @media screen and (min-width: 768px){
+
     /* Cabeçalho Barra de Navegação */
     nav{
         flex-direction: row;
@@ -77,19 +149,37 @@ nav ul li a {
         flex-direction: row;
         width: 70%;
     }
+
+    /*  Header  */
+    header{
+    /* height: 600px; */
+        height:60vh ;
+        justify-content: center;
+
+    }
+
+    /* Sobre */
+    #sobre {
+     flex-direction: row; /*  */
+     flex-wrap: wrap; /* Quebrar linha se não tiver mais espaço*/
+     align-items: center; /* alinhado começando do inicio*/
+     height: 90vh;
+     justify-content: center;
+     min-height: 80vh;   
+    }
+
+    #sobre h2 {
+        text-align: center;
+        width: 100%;
+    }
+
+    #sobre div {
+        flex-grow: 1;
+        flex-basis: 300px;
+        padding: 0 20px;
+    }
+
+
 }
 
-
-/* .sobre img {
-    width: 7cm;
-    height: 7cm;
-    border-radius: 100%;
-    align-self: baseline;
-}
-
-.sobre h1, p {
-    text-align: center;
-    flex-direction: column;
-} */
-
-
+/* #E6E6FA -> lanavder -> azulzin pastel */
