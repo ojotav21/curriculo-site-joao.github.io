@@ -135,6 +135,41 @@ header p{
     float: right;
     width: 50%;
 }
+/* Especialidades*/
+#especialidades{
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+    background-color:rgb(210, 224, 241) ;
+}
+
+#especialidades div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+#especialidades p{
+    line-height: 1.5;
+    margin: 2vh;
+    font-size: 1.2em;
+}
+
+#especialidades img {
+    margin: 10px 0 ;
+    width: 3.5cm;
+    height: 3.5cm; 
+}
+
+#especialidades h2{
+    font-size: 2em;
+}
+
+
+
 
 /* Para Desktop */
 @media screen and (min-width: 768px){
@@ -179,7 +214,36 @@ header p{
         padding: 0 20px;
     }
 
+    /* Especialidades */ 
+    #especialidades {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        max-width: auto;
+        margin: 0 auto;
+        background-color:rgb(210, 224, 241) ;
+        
+    }
 
+    #especialidades h2{
+        text-align: center;
+        width: 100%;
+    }
+
+    #especialidades div{
+        flex-grow: 1;
+        flex-basis: 200px;
+        padding: 0 10px;
+        
+
+    }
+    #especialidades img{
+        width: 3.5cm;
+        height: 3.5cm;
+    }
+  
+    
 }
 
 /* #E6E6FA -> lanavder -> azulzin pastel */
+
