@@ -4,6 +4,7 @@
 body {
     font-family: Trocchi, Montserrat, 'Permanent Marker', sans-serif;
     /* background-color:cornflowerblue;  */
+    background-color: rgb(171, 205, 238);
 }
 
 h1,h2,h3 {
@@ -121,7 +122,7 @@ header p{
 }
  
 .foto img{
-    width: 67%;
+    width: 47%;
     border-radius: 100%;
 }
 
@@ -192,7 +193,7 @@ header p{
 #competencias h3, p {
     margin-bottom: 20px;
     margin-top: 10px;
-    font-size: 1em;
+    font-size: 1.3em;
     text-align: center;
 
 }
